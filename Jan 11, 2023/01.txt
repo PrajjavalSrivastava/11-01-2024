@@ -1,0 +1,8 @@
+Word-Break-2 Algorithm:
+We start scanning the sentence from the left. As we find a valid word, we need to check whether the rest of the sentence can make valid words or not.
+
+Because in some situations the first found word from the left side can leave a remaining portion that is not further separable
+
+To keep track of the found words we will use a stack.
+
+Whenever the right portion of the string does not make valid words, we pop the top string from the stack and continue finding.
